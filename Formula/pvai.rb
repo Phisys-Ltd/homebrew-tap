@@ -1,8 +1,8 @@
 class Pvai < Formula
   desc "Make Claude Code and Codex sessions reachable for the PhiVoice AI app"
   homepage "https://github.com/Phisys-Ltd/pvai"
-  url "https://github.com/Phisys-Ltd/pvai/archive/refs/tags/v0.5.2.tar.gz"
-  sha256 "510fd8f4e4f1c6c4d5a83ed1557adda47f23ad60060e4202414d28ca6ba8c3da"
+  url "https://github.com/Phisys-Ltd/pvai/archive/refs/tags/v0.5.4.tar.gz"
+  sha256 "9cfbb68a597887d713c0d8e5ecb5a72e362cce2fae3563252b319f41f707870a"
   license all_of: ["Apache-2.0", "MIT"]
   head "https://github.com/Phisys-Ltd/pvai.git", branch: "main"
 
@@ -28,6 +28,6 @@ class Pvai < Formula
   end
 
   test do
-    assert_match "usage: pvai", shell_output("#{bin}/pvai 2>&1", 2)
+    assert_equal version.to_s, shell_output("#{bin}/pvai --version").strip
   end
 end
