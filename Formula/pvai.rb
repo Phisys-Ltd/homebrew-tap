@@ -1,8 +1,8 @@
 class Pvai < Formula
   desc "Make Claude Code and Codex sessions reachable for the PhiVoice AI app"
   homepage "https://github.com/Phisys-Ltd/pvai"
-  url "https://github.com/Phisys-Ltd/pvai/archive/refs/tags/v0.7.3.tar.gz"
-  sha256 "170ab81a542c914247a1389f457ac7155a89f075e7dcd688c9cd03bbd035b95b"
+  url "https://github.com/Phisys-Ltd/pvai/archive/refs/tags/v0.8.0.tar.gz"
+  sha256 "bdd0849214cd308850038d0ee1b0ef57d87f6ca099ef7063fa89c84e6e21c86f"
   license all_of: ["Apache-2.0", "MIT"]
   head "https://github.com/Phisys-Ltd/pvai.git", branch: "main"
 
